@@ -298,6 +298,8 @@ void Threen::_notification(int p_what) {
 }
 
 void Threen::_bind_methods() {
+	ClassDB::set_icon("Threen", "res://bin/Threen.svg");
+
 	// Bind getters and setters
 	ClassDB::bind_method(D_METHOD("is_active"), &Threen::is_active);
 	ClassDB::bind_method(D_METHOD("set_active", "active"), &Threen::set_active);
